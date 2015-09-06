@@ -4,6 +4,7 @@ turn nhl.com schedule data into json
 just give it the year (like `20152016`) you want to scrape
 
 ```
+npm install nhl_scrape
 npm install
 node index.js 20152016 > result.json
 ```

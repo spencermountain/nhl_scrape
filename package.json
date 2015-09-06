@@ -1,7 +1,9 @@
 {
   "author": "Spencer Kelly <spencermountain@gmail.com> (http://spencermounta.in)",
   "name": "nhl_scrape",
+  "repository":"git@github.com:spencermountain/nhl_scrape.git",
   "description": "fetch the nhl.com html schedule, and convert it to json",
+  "version":"0.0.2",
   "engines": [
     "node >= 0.3.6"
   ],
