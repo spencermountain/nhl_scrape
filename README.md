@@ -5,8 +5,16 @@ just give it the year (like `20152016`) you want to scrape
 
 ```
 npm install nhl_scrape
-npm install
-node index.js 20152016 > result.json
+```
+```javascript
+var nhl_scrape=require("nhl_scrape")
+
+nhl_scrape("20142015", function(data){
+  var leafs_wins= data.filter(function(game){
+    return game.winner==="Toronto"
+  })
+  console.log("(only) " + leafs_wins.length)
+})
 ```
 
 a digest of the format:
@@ -23,7 +31,8 @@ a digest of the format:
        photos: 'http://www.nhl.com/ice/gallerylanding.htm?id=53958' },
     winner: 'Vancouver',
     loser: 'Edmonton'
-    }
+  },
+  ...
   ]
   ```
 don't sue me

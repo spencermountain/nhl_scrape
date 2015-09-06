@@ -78,8 +78,8 @@ var main = function (season, cb) {
 
 }
 
-//actually call the program
-var season = process.argv[2] || "20142015"
-main(season, console.log)
-
 module.exports = main
+
+//actually call the program
+// var season = process.argv[2] || "20142015"
+// main(season, console.log)
